@@ -1,0 +1,291 @@
+body {
+  font-family: "RobotoCondensed Regular", SansSerif;
+  line-height: 1.3;
+}
+.layout {
+  overflow: hidden;
+  position: relative;
+}
+
+
+.top-block_ellipse-blue-1 {
+  position: absolute;
+  left: -750px;
+  top: -300px;
+  z-index: 0;
+}
+.top-block_ellipse-blue-2 {
+  position: absolute;
+  top: 200px;
+  left: 5%;
+  z-index: 0;
+}
+.top-block_ellipse-blue-3 {
+  position: absolute;
+  top: -500px;
+  right: -500px;
+  z-index: 0;
+}
+.top-block {
+  background: #471698;
+  .container {
+    position: relative;
+    padding: 75px 20px;
+    color: #fff;
+  }
+  .top-block_left {
+    z-index: 10 ;
+  }
+  .top-block_left-policy {
+    padding-left: 30px;
+  }
+  header {
+    .logo-image {
+      z-index: 10;
+    }
+    margin-bottom: 75px;
+
+    a {
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+      margin-left: 50px;
+      white-space: nowrap;
+      margin-bottom: 10px;
+      z-index: 110;
+    }
+  }
+  h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    font-family: "RobotoCondensed Bold", SansSerif;
+    z-index: 10;
+  }
+
+  h2.main-page-h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 80px;
+    font-family: "RobotoCondensed Bold", SansSerif;
+  }
+  .top-block_store-links {
+    a {
+      z-index: 10;
+      margin-right: 30px;
+    }
+  }
+  .top-block_additional-text {
+    color: rgba(255,255,255, 0.5);
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+
+main {
+  .main-block {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .main-block_title {
+    font-size: 48px;
+    font-family: "RobotoCondensed Bold", SansSerif;
+    margin-bottom: 50px;
+  }
+  .main-block_description {
+    font-size: 24px;
+  }
+  .main-block_icon-image {
+    margin-bottom: 30px;
+  }
+  .main-block_icons {
+    margin-bottom: 100px;
+  }
+  .main-block_smartphone {
+    margin-bottom: 200px;
+    position: relative;
+    .top-block_ellipse-blue-4 {
+      position: absolute;
+      top: -300px;
+      right: -800px;
+      z-index: 0;
+    }
+  }
+  .main-block_feature {
+    position: relative;
+    .top-block_ellipse-red {
+      position: absolute;
+      left: -550px;
+      top: -500px;
+    }
+  }
+}
+.main-block_feature-description {
+  p::before {
+    content: '';
+    height: 8px;
+    width: 8px;
+    background-color: #605CA8;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 45px;
+  }
+}
+.footer {
+  padding-bottom: 30px;
+  button {
+    background: #55429F;
+    font-size: 48px;
+    font-family: "RobotoCondensed Bold", SansSerif;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+  }
+  .footer_offer {
+    font-size: 24px;
+  }
+  .footer_link {
+    font-size: 36px;
+    color: #605CA8;
+  }
+  .footer_link a {
+    color: #605CA8;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .top-block {
+    .container {
+      padding: 20px;
+    }
+  }
+  .policy-page{
+    .container {
+      padding:  20px !important;
+    }
+  }
+  main {
+    .main-block_title {
+      font-size: 36px;
+    }
+  }
+  .policy-page {
+    .top-block_store-links {
+      padding-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .policy-page {
+    .top-block_store-links {
+      flex-direction: column;
+    }
+  }
+  .top-block {
+    .container {
+      padding: 20px;
+    }
+    header {
+      margin-bottom: 30px;
+      a {
+        margin-left: 15px;
+      }
+    }
+    h1 {
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+    h2.main-page-h2 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+  }
+  main {
+    .main-block {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .main-block_icons {
+      margin-bottom: 50px;
+    }
+    .main-block_smartphone {
+      margin-bottom: 50px;
+    }
+    .main-block_title {
+      margin-bottom: 20px;
+    }
+    .main-block_title-policy {
+      font-size: 24px;
+    }
+  }
+  .main-block_feature-description {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+.top-block {
+  .policy-smartphone {
+    position: relative;
+    img {
+      width: 100%;
+      position: absolute;
+    }
+
+  }
+}
+.policy-page {
+  .top-block_store-links {
+    padding-top: 100px;
+  }
+
+}
+.policy-page{
+  .container {
+    padding: 75px 20px 0 20px;
+  }
+}
+h2.policy-page-h2 {
+  font-size: 24px;
+  font-family: "RobotoCondensed Bold", SansSerif;
+}
+h1.policy-page-h1 {
+  font-size: 36px;
+  margin-bottom: 30px !important;
+}
+.main-block_policy-description {
+  font-size: 20px;
+}
+.modal-header {
+  background: #D4DAF8;
+  position: relative;
+  padding: 0 1rem !important;
+}
+h2 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.modal-header {
+  .close {
+    margin: -1rem !important;
+  }
+}
+a.logo-image-link {
+  margin: 0 !important;
+  display: inline-block;
+}
+.top-block {
+  z-index: 101 !important;
+}
+.logo-image-link_block {
+  z-index: 100;
+}
